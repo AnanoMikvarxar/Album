@@ -1,0 +1,154 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+a{
+    text-decoration: none;
+}
+*{
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+}
+button:focus{
+    outline: none;
+}
+button{
+    border: none;
+}
+@font-face {
+    font-family: "Anano";
+    src: url('../Font/alk-rounded-mtav-med-webfont.eot'); /* IE9 Compat Modes */
+    src: url('../Font/alk-rounded-mtav-med-webfont.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         url('../Font/alk-rounded-mtav-med-webfont.woff2') format('woff2'), /* Super Modern Browsers */
+         url('../Font/alk-rounded-mtav-med-webfont.woff') format('woff'), /* Pretty Modern Browsers */
+         url('../Font/alk-rounded-mtav-med-webfont.ttf') format('truetype'), /* Safari, Android, iOS */
+         url('../Font/alk-rounded-mtav-med-webfont.svg#alk_rounded_mtav_medregular') format('svg'); /* Legacy iOS */
+}
+html{
+    background-image: url("../img/anano.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+}
+.header-container{
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+}
+.list{
+    padding-top: 30px;
+}
+.list a{
+    color: rgb(79, 248, 152);
+    font-family: "Anano";
+    font-size: 24px;
+    -webkit-transition: all 0.4s;
+    -o-transition: all 0.4s;
+    transition: all 0.4s;
+    letter-spacing: 3px;
+}
+.list:hover .list-a {
+    color: rgb(255, 30, 30);
+}
+.slider-box{
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding-top: 100px;
+}
+.slider-img{
+    max-width: 450px;
+    width: 100%;
+    border: solid 3px rgb(79, 248, 152);
+    margin-top: 30px;
+    border-radius: 15px;
+}
+.button{
+    width: 200px;
+    height: 40px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: rgb(198, 255, 66);
+    text-transform: uppercase;
+    font-size: 18px;
+    background-image: url("../img/ananomiyvarxar.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border: solid 2px rgb(97, 8, 67);
+    border-radius: 50px;
+    -webkit-transition: all 0.5s;
+    -o-transition: all 0.5s;
+    transition: all 0.5s;
+    font-weight: bolder;
+}
+.button:hover{
+    background-image: url("../img/anantxa.jpg");
+}
+h1{
+    color: rgb(51, 255, 51);
+    font-size: 20px;
+    margin-top: 25px;
+}
+@media(max-width: 490px){
+    .list a {
+        font-size: 19px;
+    }
+}
+@media(max-width: 400px){
+    .list a {
+        font-size: 15px;
+    }
+}
